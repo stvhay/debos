@@ -26,6 +26,7 @@ package actions
 
 import (
 	"fmt"
+	"os"
 	"path"
 
 	"github.com/go-debos/debos"
@@ -42,6 +43,13 @@ func (overlay *OverlayAction) Verify(context *debos.DebosContext) error {
 	if _, err := debos.RestrictedPath(context.Rootdir, overlay.Destination); err != nil {
 		return err
 	}
+
+	if len(overlay.Origin) == 0 {
+		if _, err := os.Stat(overlay.Source); err != nil {
+			return err
+		}
+	}
+
 	return nil
 }
 
