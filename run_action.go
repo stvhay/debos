@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/sjoerdsimons/fakemachine"
+	"github.com/debos/fakemachine"
 	"path"
 )
 

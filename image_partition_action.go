@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/docker/go-units"
-	"github.com/sjoerdsimons/fakemachine"
+	"github.com/debos/fakemachine"
 	"os"
 	"os/exec"
 	"path"
