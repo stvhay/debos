@@ -12,7 +12,7 @@ import (
 	"text/template"
 
 	"github.com/jessevdk/go-flags"
-	"github.com/sjoerdsimons/fakemachine"
+	"github.com/debos/fakemachine"
 
 	"gopkg.in/yaml.v2"
 )
